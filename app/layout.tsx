@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inconsolata, Work_Sans } from "next/font/google";
 import "./globals.css";
-
+import { Toaster } from "react-hot-toast";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const inc=Inconsolata({
-  variable:"--font-inc",
-  subsets:["latin"],
-  weight:["200","300","400","500"]
+const inc = Inconsolata({
+  variable: "--font-inc",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500"]
 })
 
-const work=Work_Sans({
-  subsets:["latin"],
-  weight:["200","300","400","500"]
+const work = Work_Sans({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500"]
 })
 
 const geistMono = Geist_Mono({
@@ -39,6 +39,20 @@ export default function RootLayout({
         className={`${work.className} antialiased`}
       >
         {children}
+        <Toaster
+          toastOptions={{
+            duration: 3000,
+            style: {
+              background: '#747FE0',
+              color: '#fff',
+              fontSize: '16px',
+              borderRadius: '12px',
+              fontWeight:500,
+              padding: '14px',
+              boxShadow: '0 4px 14px rgba(0,0,0,0.2)',
+            }
+          }}
+          position="top-center" reverseOrder={false} />
       </body>
     </html>
   );

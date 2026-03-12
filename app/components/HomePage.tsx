@@ -4,9 +4,9 @@ import { motion } from "motion/react"
 import { X, Minimize } from 'lucide-react';
 export default function HomePage() {
     return (
-        <div className=' min-h-screen mt-32 md:mt-25 lg:mt-20 max-w-277 px-6 md:px-4 lg:px-0 flex flex-col gap-12 mx-auto w-full  justify-center text-[#747FE0]'>
+        <div className='min-h-dvh mt-32 md:mt-25 lg:mt-22 max-w-277 px-6 md:px-4 lg:px-0 flex flex-col gap-12 mx-auto w-full  justify-center text-[#747FE0]'>
             <div className='flex items-center gap-5'>
-                <h1 className=' text-4xl md:text-6xl lg:text-7xl font-inc font-medium '>&gt; &nbsp;Smarika Shk </h1>
+                <h1 className=' text-4xl md:text-6xl lg:text-7xl font-inc font-medium '>&gt; &nbsp;Smarika Shakya </h1>
                 <motion.div
                     animate={{ opacity: [0, 0, 1, 1] }}
                     transition={{
@@ -22,10 +22,11 @@ export default function HomePage() {
             <section className='text-xl md:text-2xl font-light  text-[#2e2e2e] tracking-tighter flex flex-col gap-2 md:gap-3'>
                 <h1
                 >Hi, I'm Smarika Shakya.</h1>
-                <p>Student • UI Designer • Figma • Marketing</p>
+                <p>Student  • UI/UX Designer  • Figma </p>
+                <h1 className='tracking-wide text-xl'>"Learning to turn user needs into meaningful digital experiences"</h1>
                 <span className='flex items-center gap-2'><h1>Check out my</h1> <a
-                href='#project'
-                className='font-normal text-[#747FE0]'>Projects.</a></span>
+                    href='#project'
+                    className='font-normal text-[#747FE0]'>Projects.</a></span>
 
             </section>
 
@@ -51,17 +52,17 @@ export default function HomePage() {
                 <div className='bg-[#5A5D7A] py-4 px-4 md:py-8 md:px-8 text-gray-50 text-base font-inc text-[18px]'>
                     <div className='flex flex-col gap-5'>
                         <div>
-                            <h1>&gt; shk.location;</h1>
+                            <h1>&gt; shakya.location;</h1>
                             <h1 className='text-[#E6D083]'>["Imadol" , "Lalitpur"]</h1>
                         </div>
                         <div>
-                            <h1>&gt; shk.education;</h1>
+                            <h1>&gt; shakya.education;</h1>
                             <h1 className='text-[#E6D083]'>"Bachelor of Information Management (BIM)"</h1>
                         </div>
                         <div>
-                            <h1>&gt; shk.contact;</h1>
+                            <h1>&gt; shakya.contact;</h1>
                             <div>
-                                <h1 className='text-[#E6D083]'>"smarkiashk10@gmail.com"</h1>
+                                <h1 className='text-[#E6D083]'>["9843800335" , "smarikashakya09@gmail.com"]</h1>
                             </div>
                         </div>
                         <div className='flex items-center gap-4'>
